@@ -6,7 +6,7 @@ public static void main(String[] args) {
 	int []arr= {2,3,1,4,15,6,7};
 	Reverse(arr);
 	for(int i=0;i<=arr.length-1;i++) {
-		System.out.println(arr[i]);
+		System.out.print(arr[i]);
 	}
 
 }
