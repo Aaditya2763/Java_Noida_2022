@@ -1,4 +1,4 @@
-package lecture_11;
+package lecture_11_Array_leetcode_Ques;
 
 public class rainWaterHarwesting {
 public static void main(String[] args) {

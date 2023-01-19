@@ -1,4 +1,4 @@
-package lecture_11;
+package lecture_11_Array_leetcode_Ques;
 
 public class leetCode_Array_Product {
 public static void main(String[] args) {
