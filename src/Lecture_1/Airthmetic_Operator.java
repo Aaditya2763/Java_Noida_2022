@@ -9,7 +9,9 @@ public class Airthmetic_Operator {
 		 int c=a+b;
 		 System.out.println(c);
 		 System.out.println(a+b);
-
+	}
+	public static void add() {
+		
 	}
 
 }

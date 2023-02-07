@@ -1,3 +1,4 @@
+
 package Assignment_4_Array1;
 
 
@@ -17,8 +18,9 @@ public static int[] Square(int []arr) {
 	int[]ans=new int [arr.length];
 	 for(int i=0;i<arr.length;i++) {
 		 ans[i]=arr[i]*arr[i];
-//		 System.out.println(ans[i]);
-	 }
+//		 System.out.println(ans[i]); n o\l
+		 
+	 } 
 	return ans;
 
 }

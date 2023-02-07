@@ -7,7 +7,7 @@ public class singleInEngineeringCollage {
 public static void main(String[] args) {
 	Scanner scn=new Scanner(System.in);
 	int n=scn.nextInt();
-	int [] trees=new int [n];
+	int []trees=new int[n];
 	for(int i=0;i<trees.length;i++) {
 		trees[i]=scn.nextInt();
 	}

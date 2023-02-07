@@ -9,21 +9,19 @@ public class stringRemoveDuplicates {
 
 public static void removeDuplicate(String str) {
 	String ans="";
-	for(int i=0;i<str.length()-1;i++) {
-		int j;
-		for(j=0;j<=i;j++) {
-			if(str.charAt(i)==str.charAt(j)) {
-				break;
-			}
-			if(i==j) {
-				ans=ans+str.charAt(i);
-			}
-			
-			
-		}
 	
-}
+	for(int i=1;i<str.length();i++) {
+		if (str.charAt(i) == str.charAt(i - 1)) {
+			continue;
+		} else {
 
+			ans = ans + str.charAt(i - 1);
+		}
+		}
+	ans = ans + str.charAt(str.length() - 1);
 	System.out.println(ans);
+	
+	
+
 }
 }

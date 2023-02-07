@@ -6,24 +6,24 @@ public class Array_Wave_Print_Row_Wise {
 	public static void main(String args[]) {
         // Your Code Here
     Scanner scn = new Scanner(System.in);
-//	int row=scn.nextInt();
-//	int col=scn.nextInt();
-//	int [][]arr=new int[row][col];
-//	for(int i=0;i<arr.length;i++) {
-//		for(int j=0;j<arr[0].length;j++) {
-//			arr[i][j]=scn.nextInt();
-//		}
-//	}
-		int[][] arr = { { 11, 12, 13, 14,15}, 
-				{ 21, 22, 23, 24, 25 }, 
-				{ 31, 32, 33, 34, 35 }, 
-				{ 41, 42, 43, 44, 45 }, };
+	int row=scn.nextInt();
+	int col=scn.nextInt();
+	int [][]arr=new int[row][col];
+	for(int i=0;i<arr.length;i++) {
+		for(int j=0;j<arr[0].length;j++) {
+			arr[i][j]=scn.nextInt();
+		}
+	}
+//		int[][] arr = { { 11, 12, 13, 14,15}, 
+//				{ 21, 22, 23, 24, 25 }, 
+//				{ 31, 32, 33, 34, 35 }, 
+//				{ 41, 42, 43, 44, 45 }, };
 
-//	for(int i=0;i<arr.length;i++) {
-//		for(int j=0;j<arr[0].length;j++) {
-//			System.out.println(arr[i][j]);
-//		}
-// }
+	for(int i=0;i<arr.length;i++) {
+		for(int j=0;j<arr[0].length;j++) {
+			System.out.println(arr[i][j]);
+		}
+ }
 		printWave(arr);
 
 	}
