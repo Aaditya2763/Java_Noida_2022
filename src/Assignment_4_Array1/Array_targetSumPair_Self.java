@@ -1,5 +1,6 @@
 package Assignment_4_Array1;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Array_targetSumPair_Self {
@@ -18,25 +19,21 @@ public static void main(String[] args) {
 	 
 	 targetPair(arr,target);
 }
-public static void targetPair(int []arr,int target) {
-	int i=0;
-	int j=arr.length-1;
-	while(i<=j || j>=0) {
-//		System.out.println(i+" "+j);
-		int sum=arr[i]+arr[j];
-		if(sum==target) {
-		System.out.println(arr[i]+" "+arr[j]);
-		i++;
-		j--;
-		}
-		else if(sum>target) {
-//			System.out.println("greater"+i+" "+j);
-			j--;
-		}
-		else if(sum<target) {
-//			System.out.println("lower"+i+" "+j);
-			i++;
-		}
+public static void targetPair(int []arr,int m) {
+	 Arrays.sort(arr);
+     int  i =0;
+     int j =arr.length-1;
+     while(i<j){
+         if(arr[i]+arr[j]>m){
+             j--;
+         }else if(arr[i]+arr[j]<m){
+             i++;
+         }else{
+             System.out.println(arr[i]+" and "+arr[j]);
+             i++;
+             j--;
+         }
+     
 	}
 	
 }

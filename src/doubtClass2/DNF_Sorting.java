@@ -11,8 +11,8 @@ public static void main(String[] args) {
 		arr[i]=scn.nextInt();
 	}
 	Sort(arr);
-	
 }
+// See  Question sorting in linear Time  to get the proper explanation
 public static void Sort(int []arr) {
 	int i=0;
 	int l=0;//sorting for 0

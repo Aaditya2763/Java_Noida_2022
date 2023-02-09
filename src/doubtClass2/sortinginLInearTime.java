@@ -18,7 +18,7 @@ public static void Sort(int []arr) {
 	int l=0;//sorting for 0
 	int r=arr.length-1; //sorting for 2
 	while(i<=r) {
-		if(arr[i]==0) {
+		if(arr[i]==0) { 
 			// this part is confusing for example 202110
 			//because after swapping i and l have the same value 
 			//and swapping doesn't change anything 
