@@ -5,9 +5,11 @@ import java.util.Scanner;
 public class findingCBNumber {
 public static void main(String[] args) {
 		Scanner scn=new Scanner(System.in);
-	int n=scn.nextInt();
+	//int n=scn.nextInt();
 	
-	String str=scn.next();
+//	String str=scn.next();
+		String str="81615";
+				
 	
 //	System.out.println(str);
 PrintSubString(str);
@@ -22,19 +24,22 @@ public static void PrintSubString(String s) {
 			String str = s.substring(i, j);
 			// Long.parseLong(str)-->String to long
 			// Integer.parseInt(str)--> string to int
-			long n = Long.parseLong(str);
-			if (iscbnumber(n) == true && isvisited(visited, i, j - 1) == true) {
-				count++;
-				for (int k = i; k < j; k++) {
-					visited[k] = true;// marked as Cb Number
-
-				}
+			System.out.println("len "+len+"  j "+j+" i "+i);
+			System.out.println(str);
+		
+//			long n = Long.parseLong(str);
+//			if (iscbnumber(n) == true && isvisited(visited, i, j - 1) == true) {
+//				count++;
+//				for (int k = i; k < j; k++) {
+//					visited[k] = true;// marked as Cb Number
+//
+//				}
 			}
 		}
 
 	}
-	System.out.println(count);
-}
+//	System.out.println(count);
+//}
 
 public static boolean isvisited(boolean[] visited, int si, int ei) {
 	// TODO Auto-generated method stub

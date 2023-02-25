@@ -19,7 +19,7 @@ public static int[] Square(int []arr) {
 	 for(int i=0;i<arr.length;i++) {
 		 ans[i]=arr[i]*arr[i];
 //		 System.out.println(ans[i]); n o\l
-		 
+	
 	 } 
 	return ans;
 
