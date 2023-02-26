@@ -15,9 +15,18 @@ public static int countAndPrintDice(int cur,int target,String ans) {
 		return 0;
 	}
 	
-int a1=countAndPrintDice(cur+1,target,ans+1);
-int a2=countAndPrintDice(cur+2,target, ans+2);
-int a3=countAndPrintDice(cur+3,target, ans+3);
-		return a1+a2+a3;
+	//1st way
+//int a1=countAndPrintDice(cur+1,target,ans+1);
+//int a2=countAndPrintDice(cur+2,target, ans+2);
+//int a3=countAndPrintDice(cur+3,target, ans+3);
+//		return a1+a2+a3;
+	//---------------------------------------
+	//2nd way
+	int a1=0;
+	for(int i=1;i<target;i++) {
+		 a1=a1+countAndPrintDice(cur+i,target,ans+i);
+		 
+	}
+	return a1;
 }
 }
