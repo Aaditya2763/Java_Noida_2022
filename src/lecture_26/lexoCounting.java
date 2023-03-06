@@ -5,7 +5,7 @@ import java.util.Iterator;
 public class lexoCounting {
 public static void main(String[] args) {
 	int n=1000;
-	printLexo(0,n);
+	printLexo(0,n); 
 }
 public static void printLexo(int curr,int range){
 	if(curr>range) {
