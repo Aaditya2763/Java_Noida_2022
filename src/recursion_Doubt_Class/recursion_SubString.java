@@ -8,13 +8,11 @@ public static void main(String[] args) {
 public static void SubSetPrint(int []arr,int i,String ans ,int target,int sum) {
 	if(i==arr.length) {
 		if(sum==target) {
-			System.out.print(ans+" ");
-		
-		
-//		System.out.println(ans+" ");
+		System.out.println(ans+" ");
 		return;
 	}
 	SubSetPrint(arr, i+1, ans+arr[i]+" ",target,sum+arr[i]);
 	SubSetPrint(arr, i+1, ans,target,sum);
+}
 }
 }

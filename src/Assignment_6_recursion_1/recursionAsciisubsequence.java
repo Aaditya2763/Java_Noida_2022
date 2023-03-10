@@ -6,12 +6,12 @@ public class recursionAsciisubsequence {
 	static int count=0;
 	 public static void main(String args[]) {
 		 
-			String str="ab";
+			String str="abc";
 //		 Scanner scn=new Scanner(System.in);
 //		 String str=scn.next();
 		 	printSub(str,"");
 		 	System.out.println();
-		 	System.out.print(count);
+//		 	System.out.print(count);
 		 }
 		 public static void printSub(String str,String ans) {
 			 

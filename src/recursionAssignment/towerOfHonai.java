@@ -14,7 +14,7 @@ public class towerOfHonai {
 		
 		}
 		public static void toh(int n,String src,String des,String hlp) {
-//	         int count=0yj
+//	         int count=0;
 			if(n==0) {
 	          count++;
 				return;

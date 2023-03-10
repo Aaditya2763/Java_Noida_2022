@@ -11,8 +11,9 @@ public class stringReverse {
 
 	    public static String Reverse(String str){
 	        str= str.trim();
+	   String[] arr=str.split("");
 // this is regex(regular expression)
-	        String[] arr=str.split("\s+');
+	     //   String[] arr=str.split("\s+");
 	        String ans="";
 	        for (int i = arr.length-1; i>=0 ; i--) {
 

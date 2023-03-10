@@ -20,8 +20,8 @@ public static void BinaryString(String ques,String ans) {
 	}
 	char ch=ques.charAt(0);
 	if(ch=='?') {
-		BinaryString(ques, ans+'0');
-		BinaryString(ques, ans+'1');
+		BinaryString(ques.substring(1), ans+'0');
+		BinaryString(ques.substring(1), ans+'1');
 	}
 	else {
 	 BinaryString(ques.substring(1), ans+ch);

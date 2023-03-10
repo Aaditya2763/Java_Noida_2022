@@ -6,7 +6,7 @@ public static void main(String[] args) {
 	    public void rotate(int[] nums, int k) {
 	rotate1(nums,k);
 	    }
-	    public static int [] rotate1(int[]arr,int k) {
+	    public int [] rotate1(int[]arr,int k) {
 		k=k%arr.length;
 		int temp=arr[arr.length-1];
 	//	
