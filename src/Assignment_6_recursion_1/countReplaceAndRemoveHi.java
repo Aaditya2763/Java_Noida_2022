@@ -40,7 +40,7 @@ removeHi(str, "");
 	
 	
 	 if(ques.length()>=2 && ques.charAt(0)=='h'&& ques.charAt(1)=='i') {
-		removeHi(ques.substring(2), ans);
+		 removeHi(ques.substring(2), ans);
 		removeHi(ques.substring(2), ans+"bye");
 		
 
