@@ -3,58 +3,54 @@ package doubt;
 import java.util.Scanner;
 
 public class TEST {
-
-	
-		public static void main(String[] args) {
-			// TODO Auto-generated method stub
-			int[] arr = { 2, 3, 2, 6, 4, 3, 1 };
-			Permutation(arr);
-			for (int i = 0; i < arr.length; i++) {
-				System.out.print(arr[i] + " ");
+	static boolean  f = false;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int m = sc.nextInt();
+		char[][] maze = new char[n][m];
+		for(int i =0;i<n;i++) {
+			String str = sc.next();
+			for(int j =0;j<str.length();j++) {
+				maze[i][j]=str.charAt(j);
 			}
-
 		}
-
-		public static void Permutation(int[] arr) {
-
-			int p = 0;
-			int q = 0;
-			int n = arr.length;
-			for (int i = n - 2; i >= 0; i--) {
-				if (arr[i] < arr[i + 1]) {
-					p = i;
-					break;
-				}
-
-			}
-			for (int i = n - 1; i >p; i--) {
-				if (arr[i] > arr[p]) {
-					q = i;
-					break;
-				}
-
-			}
-			if(p==0 && q==0) {
-				Reverse(arr, 0, n-1);
-				return;
-			}
-			
-			int temp = arr[p];
-			arr[p] = arr[q];
-			arr[q] = temp;
-			Reverse(arr, p + 1, n - 1);
-
+		int[][] ans = new int[n][m];
+		ratinMaze(maze,0,0,ans);
+		if(f==false) {
+			System.out.println("NO PATH FOUND");
 		}
-
-		public static void Reverse(int[] arr, int i, int j) {
-
-			while (i < j) {
-				int temp = arr[i];
-				arr[i] = arr[j];
-				arr[j] = temp;
-				i++;
-				j--;
-			}
-
+	}
+	public static void ratinMaze(char[][]maze,int cc,int cr,int [][] ans) {
+		if(cr==maze.length-1 && cc ==maze[0].length-1 && maze[cr][cc]!='X') {
+			ans[cr][cc]=1;
+			Display(ans);
+			System.out.println();
+			f = true;
+			return;
 		}
+		if(cc<0 || cc>=maze[0].length||cr<0||cr>=maze.length ||maze[cr][cc]=='X'
+				) {
+			return;
+		}
+		maze[cr][cc]='X';
+		ans[cr][cc]=1;
+		ratinMaze(maze,cc+1,cr,ans);
+		ratinMaze(maze, cc, cr+1,ans);
+		ratinMaze(maze,cc-1,cr,ans);
+		ratinMaze(maze,cc,cr-1,ans);
+		maze[cr][cc]='O';
+		ans[cr][cc]=0;
+		
+	}
+	public static void Display(int[][]ans) {
+		for(int i =0;i<ans.length;i++) {
+			for(int j = 0;j<ans[0].length;j++) {
+				System.out.print(ans[i][j]+" ");
+			}
+			System.out.println();
+		}
+	}
+
 }
