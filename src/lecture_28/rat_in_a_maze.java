@@ -33,7 +33,7 @@ public static void Path(int[][]arr,int r,int c,int[][]ans) {
 		display(ans);
 		return ;
 	}
-	if(r<0 ||c<0 || r==arr.length ||c==arr[0].length ||arr[r][c]=='X') {
+	if(r<0 ||c<0 || r>=arr.length ||c>=arr[0].length ||arr[r][c]=='X') {
 		return;
 	}
 	
