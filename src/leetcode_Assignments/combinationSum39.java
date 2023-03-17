@@ -14,11 +14,7 @@ List<List<Integer>>res=new ArrayList<>();
 }
 public static void combSum(int []candidates,int sum,int target,String ans,int idx,List<Integer>ll,List<List<Integer>>res) {
 	if(sum==target) {
-//		System.out.println(ans+" ");
-		int s=Integer.parseInt(ans);
-		ll.add(s);
 		res.add(new ArrayList<>(ll));
-		
 		return;
 		
 	}
@@ -26,7 +22,13 @@ public static void combSum(int []candidates,int sum,int target,String ans,int id
 		return;
 	}
 	for(int i =idx;i<candidates.length;i++) {
+	// we are adding ith index 
+		ll.add(candidates[i]);
 		combSum(candidates, sum+candidates[i], target, ans+candidates[i],i,ll,res);
+	//we are removing last added element from the list 
+		//because recursion can't undo itself in this question 
+		//because changes took place in  heap
+		ll.remove(ll.size()-1);
 	}
 	
 }

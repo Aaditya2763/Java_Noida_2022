@@ -1,8 +1,9 @@
-package lecture_28;
+package Assignment_recursionAndBacktracking;
 
 import java.util.Scanner;
 
-public class rat_in_a_maze {
+public class Rat_chases_its_cheese {
+
 	static boolean isPath=false;
 public static void main(String[] args) {
 	Scanner scn=new Scanner(System.in);
@@ -60,6 +61,6 @@ public static void display(int [][]ans) {
 		}
 		System.out.println();
 	}
-	System.out.println("*************");
+//	System.out.println("*************");
 }
 }
