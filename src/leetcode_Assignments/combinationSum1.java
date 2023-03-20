@@ -3,7 +3,7 @@ package leetcode_Assignments;
 import java.util.ArrayList;
 import java.util.List;
 
-public class combinationSum39 {
+public class combinationSum1 {
 public static void main(String[] args) {
 	int []candidates= {2,3,6,7};
 	int target=7;

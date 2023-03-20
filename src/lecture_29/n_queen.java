@@ -4,7 +4,7 @@ public class n_queen {
 public static void main(String[] args) {
 	   int n=4;
 	   boolean[][]board =new boolean[n][n];
-//	   display(board);
+//	   display(board);	
 	   Print(board, n,0);
 	   
 }
