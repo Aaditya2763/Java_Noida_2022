@@ -7,9 +7,9 @@ public class combinationSumIII {
  public static void main(String[] args) {
 	 List<List<Integer>> res=new ArrayList<>();
 		List<Integer>ll=new ArrayList<>();
-//		int target =7;
-//	int k=3;
-Sum(target, 0, k,ll,res, 1);
+		int target =7;
+	int k=3;
+Sum(target, 0,k,ll,res, 1);
 	 }
  public static void Sum(int target,int curSum,int k,List<Integer>ll,List<List<Integer>> res,int idx) {
 	 if(k==0 ) {
