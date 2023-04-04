@@ -22,9 +22,9 @@ public static int  splitArray(int[]arr,int target,String ans1,int sum1,String an
 	}
 	int p1=0;
 	int p2=0;
-	for(int i=0;i<arr.length;i++) {
-		p1=splitArray(arr,target,ans1+arr[i],sum1+arr[i],ans2,sum2,index+1);
-		p2=splitArray(arr, target, ans1,sum1,ans2+arr[i],sum2+arr[i],index+1);
+	for(int i=index;i<arr.length;i++) {
+		p1=p1+splitArray(arr,target,ans1+arr[i],sum1+arr[i],ans2,sum2,i+1);
+		p2=+p2+splitArray(arr, target, ans1,sum1,ans2+arr[i],sum2+arr[i],i+1);
 	}
 	
 return p1+p2;
