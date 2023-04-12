@@ -9,8 +9,10 @@ public static void main(String[] args) throws Exception {
       st.push(30);
       st.push(40);
       st.display();
+      
+      System.out.println(st.Size());
 //      st.push(50);
-//     System.out.println( st.pop());
+//     System.out.println(st.pop());
 System.out.println(st.peek()); 
 }
 }

@@ -49,5 +49,9 @@ public void display() {
 	}
 }
 
+public int Size() {
+	return arr.length;
+}
+
 
 }
