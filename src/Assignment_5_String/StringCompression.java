@@ -7,8 +7,9 @@ public static void main(String[] args) {
 	String str="aaabbccca";
 //	Scanner scn=new Scanner(System.in);
 //	String str=scn.next();
+	System.out.println(str.length());
 	compression(str);
-}
+}	
 public static void compression(String str) {
 	String ans="";
 	int count=1;

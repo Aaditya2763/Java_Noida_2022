@@ -1,8 +1,11 @@
 package impletationOfStack;
 
 public class Stack_Implementation {
-private int arr[];
-private int idx=0;;
+//private int arr[];
+//we have to change the access modifier to protected
+	//because we are not able to access arr in the dynamic Stack
+	protected int arr[];
+protected int idx=0;
 
 public Stack_Implementation() {
 	arr=new int[5];

@@ -4,24 +4,21 @@ import java.util.Arrays;
 
 public class test2 {
 public static void main(String[] args) {
-	int []arr= {1,3,4,1,2,3,1};
-	Arrays.sort(arr);
-	Array2d(arr,"");
-//	for(int i=0;i<arr.length;i++) {
-//		System.out.print(arr[i]);
-//	}
+	int n=15;
 	
 }
-public static void Array2d(int []arr,String ans) {
-//	System.out.println("bhdsgh");
-	for(int i=0;i<arr.length;i++) {
-		for(int j=i+1;j<arr.length;j++) {
-			if(arr[j]!=arr[i]) {
-				ans=ans+arr[i];
-			}
-			
-		}
+public static int step(int n,int curStep,int ans) {
+	if(n==0) {
+	return ans;
 	}
-	System.out.println(ans);
+	int s1=step(n-1, curStep+1,ans+1);
+	if(n%2==0) {
+		int s2=step(n-n/2, curStep+n/2,ans+n/2);	
 	}
+	
+	if(n%3==0) {
+		int s2=step(n-n/3, curStep,ans+n/3);	
+	}
+	
+}
 }

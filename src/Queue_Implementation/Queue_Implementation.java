@@ -1,13 +1,10 @@
 package Queue_Implementation;
 
 public class Queue_Implementation {
-private int []arr;
-private int idx=0;
-private int front=0;
- public void syso() {
-	// TODO Auto-generated method stub
-System.out.println(this.front=9);
-}
+protected int []arr;
+protected int idx=0;
+protected int front=0;
+ 
 public Queue_Implementation() {
 	arr=new int [5];
 }
@@ -42,7 +39,7 @@ public int deQueue() throws Exception {
 	}
 	int removeVal=arr[front];
 	//increasing front  
-	front=front+1%arr.length;
+	front=(front+1)%arr.length;
 	//decreasing array size
 	idx--;
 	return removeVal;
@@ -56,9 +53,12 @@ public int getFront() throws Exception {
 }
 
 public void display(){
-	for(int i=front;i<idx;i++) {
-		System.out.println(arr[i]);
+	for (int i = 0; i < idx; i++) {
+		int idx = (i + front) % arr.length;
+		System.out.print(arr[idx] + " ");
+
 	}
+	System.out.println();
 }
 
 

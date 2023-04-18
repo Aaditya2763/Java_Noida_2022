@@ -9,13 +9,15 @@ public static void main(String[] args) throws Exception {
 	Q.enqueue(40);
 //	Q.enqueue(50);
 //Q.deQueue();
-	Q.syso();
+	Q.display();
+	Q.deQueue();
 //	Q.deQueue();
-//	Q.deQueue();
-//	Q.deQueue();
+	Q.deQueue();
 //	Q.deQueue();
 //	Q.deQueue();
 //	Q.display();
-//	
+	Q.enqueue(50);
+	Q.enqueue(60);
+	Q.display();
 }
 }
